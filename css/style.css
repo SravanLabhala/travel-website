@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background:lightcyan    
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none ;
+}
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    
+} 
+h1,h2,h3{
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    
+}
+
+/* ################### UTILITY STYLING  ############### */
+
+
+.container{
+    max-width: 1200px;
+    width:90%;
+    margin: 0 auto;
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size: 2.5rem;
+}
+.text-red{
+    color: #e63946;
+}
+.text-light{
+    color: #f4f4f4;
+}
+.text-black{
+    color: black;
+}
+.text-grey{
+    color: #555;
+}
+    
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+     
+}
+.btn-primary{
+    background: white;
+    border-radius: 100em;
+}
+.btn-primary:hover{
+    background-color: #ddd;
+}
+
+.btn-secondary{
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background: white;
+}
+.btn-secondary:hover{
+    background-color: #f3fcf2;
+}
+.bg-dark{
+    background-color: #263238;
+}
+
+
+
+
+
+
+
+
+
+/* ############### HEADER STYLING ########## */
+
+
+.header{
+    height: 95vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.navbar a:link,
+.navbar a:visited{
+  color: white;
+}
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid white ;
+}
+
+.navbar .logo{
+    float: left;
+    position: relative;
+}
+ .navbar .nav-item{
+    float: right;
+    margin-top: 1rem;
+    
+    
+}
+
+ .navbar .nav-items{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+    
+}
+
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.navbar{
+    
+    padding: 1rem;
+    
+    
+}
+
+.header-content h1{
+   text-transform: uppercase;
+   font-weight: 800;
+   padding: 10px;
+   
+  
+   
+   text-align: center;
+   
+
+}
+.header-content p{
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.header-content{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   background: linear-gradient(rgba(0,0,0,0.5) rgba(0,0,0,0.5));
+   text-align: center;
+   transform:translate(-50%,-50%)
+    
+    
+      
+
+}
+
+/* ############## SHOWCASE SECTION  STYLING ################### */
+.showcase{
+    background:lightcyan;
+    padding: 10rem 0;
+}
+.row{
+    height: 350px;
+    background: #fff;
+    box-shadow: 5px 5px 20px 0px #aaa;
+    
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .imgbox , .row2 .textbox{
+    width: 50%;
+    float: left;
+    
+
+}
+.row2 .imgbox , .row1 .textbox{
+    width: 50%;
+    float: right;
+
+
+}
+.row .imgbox{
+    height: 100%;
+}
+.row .textbox{
+    
+   background: white;
+    padding: 3rem;
+    height: 100%;
+    
+}
+.row .imgbox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.row::after{
+    content: "";
+    display: block;
+
+    clear: both;
+
+}
+/* ############       FEATURES   ################ */
+.features{
+    padding: 10rem 0;
+}
+.bigbox{
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.611)  ;
+   
+}
+.box{
+    width: 33.333%;
+    float: left;
+    text-align: center;
+    padding: 2rem;
+}
+.bigbox::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box1 , .box3{
+    background: #263238;
+    color: #fff;
+}
+.box2{
+    background-image: radial-gradient( circle 860px at 11.8% 33.5%,  rgba(240,30,92,1) 0%, rgba(244,49,74,1) 30.5%, rgba(249,75,37,1) 56.1%, rgba(250,88,19,1) 75.6%, rgba(253,102,2,1) 100.2% );
+    color: #fff;
+}
+
+/* ########### FOOTER ##########  */
+.footer{
+    background: #263238;
+    color: #f4f4f4;
+    padding:2rem;
+    text-align: center;
+
+
+}
+.social-media-links i{
+    margin: 2rem;
+
+}
+
+/* ############# ABOUT PAGE STYLING ###########  */
+.about{
+    padding: 5rem 0rem;
+    background: lightcyan;
+    
+    
+}
+.about .container{
+  background: #fff;
+}
+.about-heading::after{
+    content: '';
+    display: block; 
+    border: 3px solid #e63946;
+    width: 100%;
+    background-color: #e63946;
+    
+    
+}
+.raw{
+    float: left;
+   margin-top: 20px;
+}
+.r1{
+    width: 50%;
+    text-align: center;
+}
+.r2{
+    width: 50%;
+    text-align: center;
+}
+.wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.wrapper li::before{
+    content: '\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+
+}
+/* ########## SMALL WRAPPPER STYLIG ########## */
+.counts{
+   
+    margin-top: 3rem;
+}
+.sw{
+   
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.sw span {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e63946;
+}
+.sw p{
+    font-weight: 700;
+    color: #555;
+}
+
+/* ############## BANNER STYLING ################ */
+.banner{
+
+    background-image: radial-gradient( circle 860px at 11.8% 33.5%,  rgba(240,30,92,1) 0%, rgba(244,49,74,1) 30.5%, rgba(249,75,37,1) 56.1%, rgba(250,88,19,1) 75.6%, rgba(253,102,2,1) 100.2% );
+    color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.462);
+    margin-top: 3rem;
+}
+.banner-left{
+    width: 60%;
+    float: left;
+
+}
+.banner-right{
+  width: 40%;
+  float: right;
+  text-align: right;
+}
+.btn-banner{
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 0.3em 2.5em;
+    letter-spacing: 0.5rem;
+    color: #f4f4f4;
+ 
+}
+.line{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    padding-left: 6rem;
+}
+.banner::after{
+    content: '';
+    display: block;
+    clear: both;
+    
+}
+/* ############## CONATACT PAGE ############ */
+
+.contact-page{
+
+    padding: 5rem 0;
+}
+
+    
+    
+
+.form-wrapper .form-data{
+    
+    float: left;
+    width: 49%;
+    padding: 1rem;
+    height: 760px;
+    background: #fff;
+
+}
+.form-wrapper .form-data i{
+     display: inline-block;
+     margin: 1rem;
+}
+.form-wrapper .form-data h2{
+     display: inline-block;
+     margin: 1rem;
+     text-transform: uppercase;
+}
+.form-wrapper .adress-group{
+    margin-bottom: 3rem;
+}
+.form-wrapper .form-data img{
+        max-width: 95%;
+        max-height: 40rem;
+        object-fit: cover ;
+        object-position: right;
+}
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* ############ FORM STYLING ######### */
+
+
+
+
+.form-wrapper .form{
+    
+    float: right;
+    width: 49%;
+    font-size: 1.6rem;
+    background: #fff;
+}
+.form h1::after{
+    content:'' ;
+    display: block;
+    border: 3px solid #e63946;
+    width: 100%;
+    background: #e63946;
+}
+.form-inputdata label{
+    display: block;
+}
+.form-inputdata input{
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-inputdata{
+    margin-bottom: 2rem;
+}
+.form label::after{
+    content: '*';
+    color: #e63946;
+}
+.form{
+    padding: 2rem;
+    height: 760px;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+
+}
+/*###############    MEDIA QUERIES     ###############*/
+
+
+
+
+/*###############    MEDIA QUERIES     ###############*/
+@media (max-width:500px ){
+    html{
+        font-size: 50%;
+    }
+    .navbar .nav-item, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+   
+    
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .imgbox,
+    .row .textbox{
+        float: none;
+        width: 100%;
+        text-align: center;
+
+    }
+    .features .box{
+        float: none ;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.611)  ;
+    }
+    .features .box2,
+    .features .box3{
+        margin-top: 7rem;
+    }
+    .bigbox{
+        box-shadow: none  ;
+       
+    }
+    .banner-left,
+    .banner-right{
+        float: none;
+        width:100%;
+        text-align: center;
+    }
+    .form-wrapper .form-data{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+
+    }
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+    
+    
+
+@media(min-width:501px) and (max-width:768px){
+    html{
+        font-size:50% ;
+    }
+    p{
+        font-size: 1.8rem ;
+    }
+    .navbar .nav-item, .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .imgbox,
+    .row .textbox{
+        float: none;
+        width: 100%;
+        text-align: center;
+
+    }
+    .features .box{
+        float: none ;
+        width: 100%;
+        text-align: center;
+        box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.611)  ;
+    }
+    .features .box2,
+    .features .box3{
+        margin-top: 7rem;
+    }
+    .bigbox{
+        box-shadow: none  ;
+       
+    }
+    .banner-left,
+    .banner-right{
+        float: none;
+        width:100%;
+        text-align: center;
+    }
+    .form-wrapper .form-data{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+
+    }
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+}
+@media(min-width:769px ) and (max-width:1200px){
+    html{
+        font-size: 9px;
+
+    }
+
+}
+@media(orientation:landscape) and (max-height:500px){
+    .header{
+        height: 90vmax;
+    }
+}
